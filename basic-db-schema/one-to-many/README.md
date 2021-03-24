@@ -6,6 +6,8 @@ The example used populate method to list down all parts in the product. The part
 
 The example also demonstrate using $pull to remove the ref part in product.
 
+The advantage is each Part is a stand-alone document, so it’s easy to search them and update them independently.
+
 References:
 https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1<br>
 https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-2<br>
