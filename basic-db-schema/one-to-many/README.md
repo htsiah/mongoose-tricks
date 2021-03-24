@@ -7,8 +7,8 @@ The example used populate method to list down all parts in the product. The part
 The example also demonstrate using $pull to remove the ref part in product.
 
 References:
-https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
-https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-2
-https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-3
-https://zellwk.com/blog/mongoose-subdocuments/
-https://www.freecodecamp.org/news/mongoose101/
+https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1<br>
+https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-2<br>
+https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-3<br>
+https://zellwk.com/blog/mongoose-subdocuments/<br>
+https://www.freecodecamp.org/news/mongoose101/<br>
