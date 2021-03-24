@@ -6,7 +6,7 @@ The example used timestamp in log where the createdAt and updatedAt maintainance
 
 You’d use a (slightly different) application-level join to find the most recent 5,000 messages for a host:
 
-host = db.hosts.findOne({ipaddr:"10.1.1.1"})
+host = db.hosts.findOne({ipaddr:"10.1.1.1"}) <br>
 db.logs.find({host: host.\_id}).sort({createAt:-1}).limit(5000).pretty()
 
 References:
