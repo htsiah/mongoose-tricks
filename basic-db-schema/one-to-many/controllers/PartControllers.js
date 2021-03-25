@@ -2,6 +2,7 @@ const { v4: uuidv4 } = require('uuid');
 const mongoose = require('mongoose');
 
 const PartModel = require('../models/PartModel');
+const ProductModel = require('../models/ProductModel');
 
 const getPart = async (req, res, next) => {
     try {
@@ -70,6 +71,13 @@ const deletePartById = async (req, res, next) => {
     
     try {
       await PartModel.findByIdAndDelete(id);
+
+      // Delete Product Ref
+      let products = await ProductModel.find({"parts": { $in : [id] }});
+      products.forEach( product => {
+        product.parts.pull(id);
+        product.save();
+      });
     } catch {
       const error = new Error('Deleting document failed.');
       return next(error);
